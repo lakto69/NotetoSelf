@@ -49,12 +49,4 @@ class Note {
         return jo
     }
 
-
-
-
-
-
-
-
-
 }

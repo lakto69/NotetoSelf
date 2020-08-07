@@ -16,25 +16,13 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.DefaultItemAnimator
 
 
-
-
 class MainActivity : AppCompatActivity() {
-
-    // Temporary code
-    //private var tempNote = Note()
-
 
     private var mSerializer: JSONSerializer? = null
     private var noteList: ArrayList<Note>? = null
-    //private val noteList = ArrayList<Note>()
-
     private var recyclerView: RecyclerView? = null
     private var adapter: NoteAdapter? = null
-
-
-
     private var showDividers: Boolean = false
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -75,11 +63,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun createNewNote(n: Note) {
-        // Temporary code
-        // tempNote = n
+//        Função Chamada no DialogNewNote.kt associado ao btnOk
+//        => callingActivity!!.createNewNote(newNote)
         noteList!!.add(n)
         adapter!!.notifyDataSetChanged()
-
     }
 
     fun showNote(noteToShow: Int) {
