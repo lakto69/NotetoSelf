@@ -50,7 +50,7 @@ class DialogShowNote : DialogFragment() {
 
         val btnOK = dialogView.findViewById(R.id.btnOK) as Button
 
-        builder.setView(dialogView).setMessage("Your Note")
+        builder.setView(dialogView).setMessage(R.string.your_note)
 
         btnOK.setOnClickListener({
             dismiss()
